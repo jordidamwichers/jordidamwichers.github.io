@@ -1,42 +1,13 @@
-# Jordi Damwichers
+# Jekyll Resume Theme
 
-> C.V. van Jordi Damwichers
+A mega simple Jekyll theme for displaying a resume/cv online.
 
-## To get started
+The theme follows the default Jekyll build as closely as possible to avoid any dependency issues.
 
-```sh
-$ gulp [--prod]
-```
+To customise you just need to fill out the `_config.yml` and the jobs and education `.yml` files in the `_data` directory with your own details.
 
-## Usage
+You can see a demo of the theme at: [mattcouchman.github.com/jekyll-resume](http://mattcouchman.github.com/jekyll-resume)
 
-```sh
-$ gulp build [--prod]
-```
+Feel free to tear apart and rebuild as you wish.
 
-```sh
-$ gulp deploy
-```
-
-#### Settings
-In your `_config.yml` and `humans.txt` you should add your Github and Twitter
-profile if you want to.
-
-## Install
-If you have cloned this repo or want to reinstall, make sure there&#39;s no
-`node_modules` or `Gemfile.lock` folder/file and then run `npm install` and
-`bundle install`.
-
-#### Update
-To update: `npm update generator-jekyllized -g`, then run `yo jekyllized:gulp
-[--rsync|amazon|pages]` in this directory. Note that this will overwrite any
-local changes, so back it up.
-
-## Github
-For more information on how to use your new project, please refer to the [README
-on Github](https://github.com/sondr3/generator-jekyllized).
-
-## Owner
-
-> [Jordi Damwichers](https://jordidamwichers.github.io)
-# jordidamwichers.github.io
+![Screenshot of resume theme](https://github.com/mattcouchman/jekyll-resume/raw/master/img/screen.png)
