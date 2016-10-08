@@ -1,0 +1,265 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+@import 'https://fonts.googleapis.com/css?family=Merriweather:300,700';
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  box-sizing: border-box; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+.container {
+  max-width: 860px;
+  margin: 0 auto;
+  padding: 0 1em; }
+
+.section-title {
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  position: relative; }
+  .section-title:after {
+    content: '';
+    position: absolute;
+    bottom: -0.5em;
+    left: 0;
+    width: 50px;
+    height: 1px;
+    background: #00aa00; }
+
+body {
+  font-family: 'Merriweather', serif;
+  font-weight: 300;
+  font-style: normal;
+  color: #222; }
+
+header {
+  font-size: 1.5em;
+  line-height: 1.5; }
+
+.page-content {
+  font-size: 1.125em;
+  line-height: 1.5; }
+
+h1 {
+  font-weight: 300;
+  font-size: 2.1666666666666665em;
+  line-height: 1.3846153846153848;
+  margin-top: 0.6923076923076924em;
+  margin-bottom: 0.75em; }
+
+h2 {
+  font-weight: 300;
+  font-size: 1.6666666666666667em;
+  line-height: 1.7999999999999998;
+  margin-top: 0.8999999999999999em;
+  margin-bottom: 0.8999999999999999em; }
+
+h3 {
+  font-weight: 300;
+  font-size: 1.2777777777777777em;
+  line-height: 1.173913043478261em;
+  margin-top: 1.173913043478261em;
+  margin-bottom: 1.1em; }
+
+h4 {
+  font-weight: 300;
+  font-size: 1em;
+  line-height: 1.5;
+  margin-top: 1.5em;
+  margin-bottom: 0em; }
+
+h5 {
+  font-weight: 300;
+  font-style: italic;
+  font-size: 1em;
+  line-height: 1.5;
+  margin-top: 1.5em;
+  margin-bottom: 0em; }
+
+p,
+ul,
+ol,
+pre,
+table,
+blockquote {
+  margin-top: 0em;
+  margin-bottom: 1.5em; }
+
+ul ul,
+ol ol,
+ul ol,
+ol ul {
+  margin-top: 0;
+  margin-bottom: 0; }
+
+hr {
+  border: 1px solid;
+  margin: -1px 0; }
+
+b,
+strong,
+em,
+small,
+code {
+  line-height: 1; }
+
+strong,
+em {
+  font-weight: 700; }
+
+sup {
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+  top: -0.5em; }
+
+sub {
+  bottom: -0.25em; }
+
+header {
+  padding: 3em 0 1.5em;
+  margin-bottom: 1.5em; }
+  @media (min-width: 640px) {
+    header {
+      padding-top: 4.5em; } }
+
+.intro {
+  margin-bottom: 3em; }
+  .intro h1 {
+    font-family: 'Droid Serif', serif;
+    font-weight: 300; }
+  .intro em {
+    font-weight: 700; }
+
+.social a {
+  margin-right: 3em; }
+
+.footer {
+  text-align: center; }
+
+.page-content .container {
+  border-top: 1px solid #edefee;
+  padding-top: 1.5em; }
+
+dl {
+  margin: 1.5em 0;
+  border-bottom: 1px solid #edefee;
+  display: inline-table; }
+
+dt, dd {
+  display: inline-block;
+  vertical-align: top;
+  margin-bottom: 3em; }
+  dt p, dd p {
+    margin-bottom: 0; }
+
+.study {
+  font-weight: 700; }
+
+.title,
+.degree {
+  font-weight: 700; }
+
+@media (min-width: 640px) {
+  .experience dt, .experience dd,
+  .education dt,
+  .education dd {
+    width: 50%; }
+  .experience dt,
+  .education dt {
+    padding-right: 30px; }
+  dl {
+    margin-bottom: 3em; } }
+
+body {
+  background: #fafafa; }
+
+a {
+  color: #00aa00;
+  transition: all ease-out .2s;
+  border-bottom: 2px solid rgba(0, 170, 0, 0.7);
+  text-decoration: none; }
+  a:hover {
+    background: rgba(5, 171, 75, 0.1);
+    text-decoration: none;
+    border-bottom-color: #00aa00; }
+
+/*
+a {
+    color: #222;
+    background: rgba(0, 158, 251, 0.1);
+    transition: all ease-out .2s;
+    border-bottom: 2px solid rgba(0, 158, 251, 0.7);
+	text-decoration: none;
+
+    &:hover {
+        background: rgba(0, 158, 251, 0.2);
+        text-decoration: none;
+        border-bottom-color: rgba(0, 158, 251, 1);
+    }
+}
+*/
+/*
+	
+Uncomment to show vertical grid lines
+
+*/
+/*
+header {
+  background-image: linear-gradient(to bottom, hsla(200, 100%, 50%, .1) 1px, transparent 1px);
+  background-position: left -1px;
+  background-repeat: repeat;
+  //background-size: 27px 27px;
+  background-size: (27px / 1.125 * 1.5) (27px / 1.125 * 1.5);
+}
+
+	 
+.page-content {
+  background-image: linear-gradient(to bottom, hsla(200, 100%, 50%, .1) 1px, transparent 1px);
+  background-position: left -1px;
+  background-repeat: repeat;
+  background-size: 27px 27px;
+  //background-size: (27px / 1.125 * 1.5) (27px / 1.125 * 1.5);
+}
+*/
+
+/*# sourceMappingURL=style.css.map */
