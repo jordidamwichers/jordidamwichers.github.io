@@ -2,7 +2,6 @@
    v2.0 | 20110126
    License: none (public domain)
 */
-@import 'https://fonts.googleapis.com/css?family=Merriweather:300,700';
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -48,26 +47,16 @@ table {
   border-spacing: 0; }
 
 .container {
-  max-width: 860px;
+  max-width: 800px;
   margin: 0 auto;
-  padding: 0 1em; }
+  padding: 2rem; }
 
-.section-title {
-  text-transform: uppercase;
-  letter-spacing: 2px;
-  position: relative; }
-  .section-title:after {
-    content: '';
-    position: absolute;
-    bottom: -0.5em;
-    left: 0;
-    width: 50px;
-    height: 1px;
-    background: #00aa00; }
+.section {
+  margin-bottom: 3em;
+  border-bottom: 1px solid #edefee; }
 
 body {
-  font-family: 'Merriweather', serif;
-  font-weight: 300;
+  font-family: 'Georgia', serif;
   font-style: normal;
   color: #222; }
 
@@ -80,6 +69,7 @@ header {
   line-height: 1.5; }
 
 h1 {
+  font-family: sans-serif;
   font-weight: 300;
   font-size: 2.1666666666666665em;
   line-height: 1.3846153846153848;
@@ -87,6 +77,7 @@ h1 {
   margin-bottom: 0.75em; }
 
 h2 {
+  font-family: sans-serif;
   font-weight: 300;
   font-size: 1.6666666666666667em;
   line-height: 1.7999999999999998;
@@ -94,6 +85,7 @@ h2 {
   margin-bottom: 0.8999999999999999em; }
 
 h3 {
+  font-family: sans-serif;
   font-weight: 300;
   font-size: 1.2777777777777777em;
   line-height: 1.173913043478261em;
@@ -130,6 +122,10 @@ ul ol,
 ol ul {
   margin-top: 0;
   margin-bottom: 0; }
+
+ol {
+  padding-left: 2em;
+  list-style: decimal; }
 
 hr {
   border: 1px solid;
@@ -173,24 +169,45 @@ header {
 .social a {
   margin-right: 3em; }
 
+header {
+  width: 100vw;
+  min-height: 100vh;
+  padding: 0;
+  display: flex; }
+
+.intro {
+  max-width: 800px;
+  margin: auto;
+  padding: 2rem; }
+
 .footer {
   text-align: center; }
 
-.page-content .container {
-  border-top: 1px solid #edefee;
-  padding-top: 1.5em; }
+.section-title {
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  position: relative;
+  margin-bottom: 2em; }
+  .section-title:after {
+    content: '';
+    position: absolute;
+    bottom: -0.5em;
+    left: 0;
+    width: 50px;
+    height: 1px;
+    background: #00aa00; }
 
-dl {
-  margin: 1.5em 0;
-  border-bottom: 1px solid #edefee;
-  display: inline-table; }
+dd p,
+dt p {
+  margin-bottom: 0; }
 
-dt, dd {
-  display: inline-block;
-  vertical-align: top;
-  margin-bottom: 3em; }
-  dt p, dd p {
-    margin-bottom: 0; }
+dt {
+  padding-left: 1em;
+  margin-bottom: 1em;
+  border-left: 2px solid #edefee; }
+
+dd {
+  margin-bottom: 2em; }
 
 .study {
   font-weight: 700; }
@@ -198,17 +215,6 @@ dt, dd {
 .title,
 .degree {
   font-weight: 700; }
-
-@media (min-width: 640px) {
-  .experience dt, .experience dd,
-  .education dt,
-  .education dd {
-    width: 50%; }
-  .experience dt,
-  .education dt {
-    padding-right: 30px; }
-  dl {
-    margin-bottom: 3em; } }
 
 body {
   background: #fafafa; }
